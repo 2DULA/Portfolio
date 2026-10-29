@@ -4,38 +4,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dula | Developer</title>
+  <meta name="description"
+    content="Dula, full stack developer building web apps with React, Node.js, Express, and PostgreSQL." />
+  <title>Dula | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Dula</h1>
-    <p>Full Stack Developer</p>
-  </header>
+  <nav class="nav">
+    <a href="#top" class="nav-logo">dula<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Aiming to make a change in the world</p>
-    <p>Very excited about this</p>
+  <main id="top">
+    <header class="hero">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Dula</h1>
+      <p class="hero-role">Full Stack Developer</p>
+      <p class="hero-summary">
+        I build web applications end to end, from React interfaces to Node.js APIs and PostgreSQL databases.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-secondary">Get in touch</a>
+      </div>
+    </header>
 
-  </section>
+    <section id="about">
+      <h2 class="section-title"><span>01</span> About</h2>
+      <p>
+        I'm a full stack developer who enjoys turning ideas into working products. I like owning the whole
+        stack: designing the database, writing the API, securing it with authentication, and shipping a
+        clean interface on top.
+      </p>
+      <p>
+        I'm currently growing my skills by building and deploying real projects, and I'm looking for
+        opportunities to contribute to a team and keep learning.
+      </p>
+    </section>
 
+    <section id="skills">
+      <h2 class="section-title"><span>02</span> Skills</h2>
+      <div class="skills-groups">
+        <div class="skills-group">
+          <h3>Frontend</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Backend</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">JWT Auth</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Data &amp; Tools</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Render</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Expense Tracker</h3>
-      <p>A full stack expense tracking app with add, edit, and delete functionality. Built with React, Node.js, Express,
-        and PostgreSQL.</p>
-      <a href="https://expense-tracker-dula.vercel.app" target="_blank">Live Demo</a>
-      <a href="https://github.com/2DULA/expense-tracker" target="_blank">GitHub</a>
-    </div>
-  </section>
+    <section id="projects">
+      <h2 class="section-title"><span>03</span> Projects</h2>
+      <article class="project-card">
+        <div class="project-header">
+          <h3>Expense Tracker</h3>
+          <div class="project-links">
+            <a href="https://github.com/2DULA/Expense-tracker" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://expense-tracker-dula.vercel.app" target="_blank" rel="noopener">Live Demo &rarr;</a>
+          </div>
+        </div>
+        <p>
+          A full stack expense tracking app with user accounts. Users sign up, log in, and manage their own
+          expenses with full create, edit, and delete support and a running total. Passwords are hashed with
+          bcrypt and every expense route is protected by JWT authentication.
+        </p>
+        <ul class="tech-list">
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>PostgreSQL</li>
+          <li>JWT</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title"><span>04</span> Contact</h2>
+      <p>
+        I'm open to new opportunities and collaborations. The best way to reach me is by email.
+      </p>
+      <div class="hero-actions">
+        <a href="mailto:httpsdula@gmail.com" class="btn btn-primary">Say hello</a>
+        <a href="https://github.com/2DULA" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>GitHub: <a href="https://github.com/2DULA" target="_blank">2DULA</a> &nbsp;|&nbsp; Email: <a
-        href="mailto:you@email.com">httpsdula@email.com</a></p>
+    <p>Designed and built by Dula</p>
   </footer>
 </body>
 
